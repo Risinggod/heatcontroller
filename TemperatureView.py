@@ -13,32 +13,32 @@ class TemperatureView(QWidget):
         chart.setTitle("Temperaturverlauf")
 
         # Zeitachse
-        time_axis = QtCharts.QDateTimeAxis()
-        time_axis.setFormat("hh:mm")
-        chart.addAxis(time_axis, Qt.AlignmentFlag.AlignBottom)
+        #time_axis = QtCharts.QDateTimeAxis()
+        #time_axis.setFormat("hh:mm")
+        #chart.addAxis(time_axis, Qt.AlignmentFlag.AlignBottom)
 
         # Temperaturachse
-        temp_axis = QtCharts.QValueAxis()
-        temp_axis.setTitleText("Temperatur (°C)")
-        chart.addAxis(temp_axis, Qt.AlignmentFlag.AlignLeft)
+        #temp_axis = QtCharts.QValueAxis()
+        #temp_axis.setTitleText("Temperatur (°C)")
+        #chart.addAxis(temp_axis, Qt.AlignmentFlag.AlignLeft)
 
         # Datenpunkte
-        series = QtCharts.QLineSeries()
-        series.append(QDateTime.currentDateTime().addSecs(0), 20)
-        series.append(QDateTime.currentDateTime().addSecs(3600), 21)
-        series.append(QDateTime.currentDateTime().addSecs(7200), 22)
+        #series = QtCharts.QLineSeries()
+        #series.append(QDateTime.currentDateTime().addSecs(0), 20)
+        #series.append(QDateTime.currentDateTime().addSecs(3600), 21)
+        #series.append(QDateTime.currentDateTime().addSecs(7200), 22)
 
-        chart.addSeries(series)
-
-        # ChartView
-        chart_view = QtCharts.QChartView(chart)
-        chart_view.setRenderHint(QtCharts.QChartView.RenderHint.Antialiasing)
+        #chart.addSeries(series)
 
         # ChartView
-        chart_view = QChartView(chart)
-        chart_view.setRenderHint(QChartView.RenderHint.Antialiasing)
+        #chart_view = QtCharts.QChartView(chart)
+        #chart_view.setRenderHint(QtCharts.QChartView.RenderHint.Antialiasing)
 
-        self.setCentralWidget(chart_view)
-        self.setWindowTitle("Temperaturdiagramm")
+        # ChartView
+        #chart_view = QChartView(chart)
+        #chart_view.setRenderHint(QChartView.RenderHint.Antialiasing)
+
+        #self.setCentralWidget(chart_view)
+        #self.setWindowTitle("Temperaturdiagramm")
 
 

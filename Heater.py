@@ -8,12 +8,10 @@ class Heater(QWidget):
         super().__init__(parent)
 
         layout = QGridLayout(self)
-        self.setLayout(layout)
 
         self.testLabel = QLabel("das ist ein test")
+        layout.addWidget(self.testLabel, 1, 1)
 
-        layout = QGridLayout(self)
         self.setLayout(layout)
 
-        layout.addWidget(self.testLabel, 1, 1)
 
